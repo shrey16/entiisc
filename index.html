@@ -14,6 +14,43 @@
             margin: 0px 5px 20px 5px;
             padding: 10px 0;
         }
+        
+        .footer a {
+            color: #fff;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #fff;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 
@@ -28,7 +65,14 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href="#">Multipreneurship</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Multipreneurship<span class="caret"></span></a>
+                    <div class="dropdown-content">
+                        <a href="#">About MEP</a>
+                        <a href="#">Register</a>
+                        <a href="https://sid.iisc.ac.in">SID</a>
+                    </div>
+                </li>
                 <li><a href="#">IISc</a></li>
             </ul>
         </div>
@@ -41,10 +85,18 @@
 
     <div class="footer" style="background-color: #272727; color: white; font-family: 'Lato', 'Helvetica', 'Sans-Serif'; padding-bottom: 20px;">
         <div class="container">
-            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-map-marker " style="font-size: 32pt; color: #e96656; padding-bottom: 20px; "></span><br>Indian Institute of Science, CV Raman Rd, Bengaluru, Karnataka 560012</div>
-            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-envelope " style="font-size: 32pt; color: #34d293; padding-bottom: 20px; "></span><br>entiisc@iisc.ac.in</div>
-            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-earphone " style="font-size: 32pt; color: #3ab0e2; padding-bottom: 20px; "></span><br>+91 9916 48 58 48</div>
-            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span style="padding-bottom: 20px; "><img height=42 src="img/fb-logo.png "><img height=42 src="img/twitter-logo.png "><img height=42 src="img/linkedin-logo.png "></span><br>Developed by Shrey G and Kartik S</div>
+            <a href="https://goo.gl/maps/ki7n4wJfAkm">
+                <div class="col-md-3" style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-map-marker " style="font-size: 32pt; color: #e96656; padding-bottom: 20px; "></span><br>Indian Institute of Science, CV Raman Rd, Bengaluru, Karnataka 560012</div>
+            </a>
+            <a href="mailto:entiisc@iisc.ac.in">
+                <div class="col-md-3" style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-envelope " style="font-size: 32pt; color: #34d293; padding-bottom: 20px; "></span><br>entiisc@iisc.ac.in</div>
+            </a>
+            <a href="tel:+91-9916485848">
+                <div class="col-md-3" style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-earphone " style="font-size: 32pt; color: #3ab0e2; padding-bottom: 20px; "></span><br>+91 9916 48 58 48</div>
+            </a>
+            <div class="col-md-3" style="text-align: center; padding: 67px 15px 30px 15px; "><span style="padding-bottom: 20px; "><a href="https://www.facebook.com/EntIISc/"><img height=42 src="img/fb-logo.png "></a><a href="https://twitter.com/EntIISc"><img height=42 src="img/twitter-logo.png "></a><a href="https://www.linkedin.com/company/entiisc/"><img height=42 src="img/linkedin-logo.png "></a></span><br>Developed
+                by Shrey G and Kartik S</div>
+
         </div>
     </div>
 
