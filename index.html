@@ -1,26 +1,53 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>EntIISc - Enterpreneurship and Innovation club of IISc</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-
-    <script src='js/jquery-3.3.1.min.js'></script>
-    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        .footer img {
+            margin: 0px 5px 20px 5px;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <nav class="navbar navbar-default" style="background-color: white; min-height: 75px;">
+        <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                <a class="navbar-left" href="#"><img src="img/logo.png" style="height: 75px"></a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li>Sign Up</li>
-                <li>Login</li>
+            <ul class="nav navbar-nav navbar-right" style="padding-top: 12.5px">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Multipreneurship</a></li>
+                <li><a href="#">IISc</a></li>
             </ul>
         </div>
     </nav>
 
+    <div class="container">
+        <h3>Basic Navbar Example</h3>
+        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+    </div>
+
+    <div class="footer" style="background-color: #272727; color: white; font-family: 'Lato', 'Helvetica', 'Sans-Serif'; padding-bottom: 20px;">
+        <div class="container">
+            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-map-marker " style="font-size: 32pt; color: #e96656; padding-bottom: 20px; "></span><br>Indian Institute of Science, CV Raman Rd, Bengaluru, Karnataka 560012</div>
+            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-envelope " style="font-size: 32pt; color: #34d293; padding-bottom: 20px; "></span><br>entiisc@iisc.ac.in</div>
+            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span class="glyphicon glyphicon-earphone " style="font-size: 32pt; color: #3ab0e2; padding-bottom: 20px; "></span><br>+91 9916 48 58 48</div>
+            <div class="col-md-3 " style="text-align: center; padding: 67px 15px 30px 15px; "><span style="padding-bottom: 20px; "><img height=42 src="img/fb-logo.png "><img height=42 src="img/twitter-logo.png "><img height=42 src="img/linkedin-logo.png "></span><br>Developed by Shrey G and Kartik S</div>
+        </div>
+    </div>
+
 </body>
+
+</html>
