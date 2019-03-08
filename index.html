@@ -51,6 +51,53 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
+        /*Styles for this page */
+        .section-header{
+            text-align: center;
+            margin-top:100px;
+        }
+        .section-header h1{
+            font-weight: 550;
+            font-size: 36pt;
+        }
+        .purpose{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .purpose hr{
+           display:block;
+           background-color: #000000;
+           height:2px;
+           width:30%;
+           border-width: 0px; 
+           margin-top: -5px;
+        }
+        .purpose p{
+            color: #909090;
+            font-weight: 500;
+        }
+        .service-icon{
+            display: block;
+            position: relative;
+            width: 145px;
+            height: 145px;
+            margin: auto;
+            margin-top:50px;
+            margin-bottom: 20px;
+            border: 10px solid #ececec;
+            border-radius: 50%;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            overflow: hidden;
+        }
+        .service-icon img{
+            height: 100%;
+            width: 100%;
+        }
+        .service-icon:hover{
+            border: 5px solid #000000;
+        }
     </style>
 </head>
 
@@ -78,10 +125,94 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h3>Basic Navbar Example</h3>
-        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+    <div class="container" id="collage">
+
     </div>
+   <div class="container">
+
+		<!-- SECTION HEADER -->
+
+		<div class="section-header">
+
+			<!-- SECTION TITLE AND SUBTITLE -->
+
+            <h1>WHAT DO WE DO?</h1>
+            <div>Sensitize, Support and Facilitate Entrepreneurship and Innovation activities at IISc</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-sm-3 purpose">
+                <div class="service-icon" tabindex="0" >
+                    <img src='img/bulb.png'/>
+                    <!-- FOCUS ICON-->
+                </div>
+                <h3>Sensitize</h3>
+                <hr>
+				<!-- FOCUS HEADING -->
+
+				<p>
+                    Talks <br>
+                    Workshops <br>
+                    Competitions <br>
+                    Summits <br>
+                </p>
+			</div>
+			<div class="col-lg-3 col-sm-3 purpose">
+
+				<div class="service-icon" tabindex="0">
+                    <img src="img/support.png">
+                </div>
+						
+                <h3>Support</h3>
+                <hr>
+				<!-- FOCUS HEADING -->
+
+                <p>
+                    Business Plan <br>
+                    In-house Validations <br>
+                    In-house Mentorships <br>
+                    Meet-ups
+                </p>
+			</div>
+
+			<div class="col-lg-3 col-sm-3 purpose">
+				<div class="service-icon" tabindex="0">
+                    <img src = "img/facilitate.png" />
+                    <!-- FOCUS ICON-->
+                </div>
+                <h3>Facilitate</h3>
+                <hr>
+				<!-- FOCUS HEADING -->
+
+				<p>
+                    External Mentorship <br>
+                    Showcase/Expo <br>
+                    Team Building <br>
+                    Boot-Camps
+                </p>
+			</div>
+
+			<div class="col-lg-3 col-sm-3 purpose">
+
+                <div class="service-icon" tabindex="0">
+                    <img src="img/focus.png" />
+                </div>
+                <h3>Focus Areas</h3>
+                <hr>
+				<!-- FOCUS HEADING -->
+
+				<p>
+                    Entrepreneurship <br>
+                    Social Innovations <br>
+                    User-Centerd Design <br>
+                    Design Thinking</p>
+			</div>
+
+		</div>
+
+	</div> <!-- / END CONTAINER -->
+
+	
 
     <div class="footer" style="background-color: #272727; color: white; font-family: 'Lato', 'Helvetica', 'Sans-Serif'; padding-bottom: 20px;">
         <div class="container">
