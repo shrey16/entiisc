@@ -12,6 +12,7 @@
 
     <style>
         .ncard {
+            margin: 0 0 20px 0;
             padding: 25px;
             font-size: 14px;
             font-weight: 400;
@@ -22,17 +23,25 @@
             box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
             overflow: auto;
             zoom: 1;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         }
         
-        .ncard h2 {
+        .ncard .heading {
             margin: 0 0 15px;
             font-weight: 600;
             font-size: 22px;
             line-height: 1.3;
+            color: #32373c;
         }
         
-        .bottom div {
-            padding: 0;
+        .bottom {
+            display: table;
+            width: 100%;
+            margin-top: 30px;
+        }
+        
+        .subbottom {
+            display: table-cell;
         }
     </style>
 
@@ -62,18 +71,20 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>News</h1>
-        <div class="col-md-6">
-            <div class="ncard">
-                <h2>IISc Alumnus and Former Student President of EntIISc talking about their product.</h2>
-                <p>Apoorv Shankar & Abhishek Upperwal, Co-founders of Lazy with YourStory Business Editor Vishal Krishna talking about “product design and their AI powered Magic ring.” </p>
-                <div class="bottom">
-                    <div class="col-md-6">
-                        <span class="glyphicon glyphicon-user"></span> Author's Name
-                    </div>
-                    <div class="col-md-6" style="text-align: right;">
-                        <span class="glyphicon glyphicon-calendar"></span> 1st Jan, 2019
+    <div class="container" style="padding-left: 30px;">
+        <div style="padding-top: 40px;">
+            <h1 style="box-sizing: border-box; font-size: 16px; line-height: 24px; font-weight: 400;">News</h1>
+            <div class="col-md-6" style="padding: 0; margin: 0;">
+                <div class="ncard">
+                    <p class="heading">IISc Alumnus and Former Student President of EntIISc talking about their product.</p>
+                    <p>Apoorv Shankar & Abhishek Upperwal, Co-founders of Lazy with YourStory Business Editor Vishal Krishna talking about “product design and their AI powered Magic ring.” </p>
+                    <div class="bottom">
+                        <div class="subbottom">
+                            <span class="glyphicon glyphicon-user"></span> Author's Name
+                        </div>
+                        <div class="subbottom" style="text-align: right;">
+                            <span class="glyphicon glyphicon-calendar"></span> 1st Jan, 2019
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,8 +107,6 @@
 
         </div>
     </div>
-
-    <script id="dsq-count-scr" src="//entiisc.disqus.com/count.js" async></script>
 
 </body>
 
